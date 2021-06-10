@@ -1,0 +1,76 @@
+.slider-wrapper {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.nav-button {
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+  padding: 12px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 50%;
+  background-color: transparent;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.nav-button:first-of-type {
+  transform: scaleX(-1);
+}
+
+.nav-button:disabled .icon {
+  visibility: hidden;
+}
+
+.slide {
+  transition: opacity 400ms;
+}
+
+.image {
+  vertical-align: middle;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 1rem;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+}
+
+.likes {
+  display: flex;
+}
+
+.icon {
+  fill: currentColor;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.nav-button .icon {
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
+}
+
+.likes .icon {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  margin-right: 4px;
+}
